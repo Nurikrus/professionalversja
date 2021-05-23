@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+span mark {
+    color: #F16D7F;
+    background-color: inherit;
+}
+
+.logomenucolor {
+    background-color: black;
+    align-items: center;
+}
+
+.previewcolor {
+    background: #F1E4E6;
+    height: 764px;
+    margin-bottom: 65px;
+}
+
+.logomenu {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menubak {
+    display: flex;
+}
+
+.margleft {
+    margin-left: 41px;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previewtext {
+    display: flex;
+}
+
+.brand {
+    width: 19px;
+    height: 92px;
+    background: #F16D7F;
+    margin: auto 0;
+}
+
+.textpreview {
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    margin: auto 0;
+}
+
+.bestlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product1 {
+    background-image: url(pic/prod1.jpg);
+}
+
+.product2 {
+    background-image: url(pic/prod2.jpg);
+}
+
+.product3 {
+    background-image: url(pic/prod3.jpg);
+}
+
+.product4 {
+    background-image: url(pic/prod4.jpg);
+}
+
+.textfont {
+    font-size: 16px;
+    line-height: 19px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.font {
+    display: flex;
+    width: 360px;
+    height: 260px;
+    text-align: center;
+}
+
+.fontlast {
+    margin-top: 30px;
+    display: flex;
+    width: 1140px;
+    height: 180px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.product {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}    
+
+.text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.list {
+    margin-top: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    margin-bottom: 30px;
+    background: #F8F8F8;
+    height: 581px;
+    width: 360px;
+    list-style-type: none;
+}
+
+.cardtext {
+    margin-left: 16px;
+}
+
+.cardname {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.buy {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.goproduct {
+    padding: 14px 38px;
+    border: 1px solid #FF6A6A;
+    background-color: #fff;
+}
+
+.textbut {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+
+.footer {
+    margin-top: 95px;
+}
+
+.delicolor {
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.delilist {
+    margin: auto;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery {
+    height: 341px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.helpdelivery {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.textdelivery {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.question {
+    height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questionimage {
+    background-image: url(pic/question.jpg);
+}
+
+.help {
+    width: 360px;
+}
+
+.helpemail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textquestion {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.email {
+    width: 560px;
+}
+
+.textemail {
+    font-size: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.copyritecolor {
+    background-color: black;
+}
+
+.copyrite {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textcopyrite {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.cont {
+    display: flex;
+}
+
+.con {
+    border: 1px solid black;
+}
