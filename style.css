@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: Lato;
 }
@@ -255,20 +259,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360px;
-  height: 260px;
+  width: 31%;
+  min-height: 260px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .bestlist .font .textfont {
+  position: absolute;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.bestlist .font .textfont mark {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.bestlist .font .prodimg:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .bestlist .last {
@@ -276,7 +293,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 100%;
   height: 180px;
 }
 
@@ -902,6 +919,281 @@ body {
   color: #FFFFFF;
 }
 
+<<<<<<< Updated upstream
+=======
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 96px;
+}
+
+.card .cardbak {
+  width: 652px;
+}
+
+.card .cardbak .cardlist .cardname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.21);
+          box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.21);
+  margin-bottom: 40px;
+  background-color: #FFFFFF;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.card .cardbak .cardlist .cardname:hover {
+  z-index: 1;
+  -webkit-transform: translatex(200px) scale(1.2, 1.2);
+          transform: translatex(200px) scale(1.2, 1.2);
+}
+
+.card .cardbak .cardlist .cardname .cardinfo {
+  padding: 22px 31px;
+  position: relative;
+  width: 390px;
+}
+
+.card .cardbak .cardlist .cardname .cardinfo .productname {
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.card .cardbak .cardlist .cardname .cardinfo .close {
+  position: absolute;
+  right: 22px;
+  top: 28px;
+}
+
+.card .cardbak .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.card .cardbak .button .cardbut {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 17px 38px;
+  border: 1px solid #A4A4A4;
+}
+
+.card .shipping .adress {
+  width: 360px;
+  margin-top: 17px;
+}
+
+.card .shipping .adress .nameadress {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.card .shipping .adress .adress-text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  margin-top: 20px;
+  width: 100%;
+  padding: 16px 12px;
+  border: 1px solid #A4A4A4;
+}
+
+.card .shipping .adress .adressbut {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-top: 23px;
+  padding: 15px 10px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+}
+
+.card .shipping .checkout {
+  margin-top: 57px;
+  background-color: #F5F3F3;
+  padding: 42px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .shipping .checkout .sub {
+  text-align: right;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  position: relative;
+  right: -9px;
+}
+
+.card .shipping .checkout .grand {
+  text-align: right;
+  padding-top: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  position: relative;
+  right: -6px;
+}
+
+.card .shipping .checkout hr {
+  margin: 18px 0;
+  color: #E2E2E2;
+}
+
+.card .shipping .checkout .goproduct {
+  padding: 15px 43px;
+  border: 1px solid #FF6A6A;
+  background-color: #FF6A6A;
+}
+
+.card .shipping .checkout .goproduct .textbut {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.card .shipping .checkout .goproduct:hover {
+  background-color: #fff;
+}
+
+.card .shipping .checkout .goproduct:hover .textbut {
+  color: #F26376;
+}
+
+.registration .userloyaliti {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration .userloyaliti .user {
+  width: 32%;
+}
+
+.registration .userloyaliti .user legend {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .userloyaliti .user .textinput {
+  margin-top: 20px;
+  padding: 12px 17px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 89%;
+}
+
+.registration .userloyaliti .user .checkmale {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin: 32px 10px 32px 0;
+}
+
+.registration .userloyaliti .user .margleft {
+  margin-left: 20px;
+}
+
+.registration .userloyaliti .user .login {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .userloyaliti .user .logintext {
+  margin: 15px 0 40px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration .userloyaliti .user .goproduct {
+  padding: 16px 29px;
+  border: 1px solid #FF6A6A;
+  background-color: #FF6A6A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration .userloyaliti .user .goproduct .textbut {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.registration .userloyaliti .user .goproduct:hover {
+  background-color: #fff;
+}
+
+.registration .userloyaliti .user .goproduct:hover .textbut {
+  color: #F26376;
+}
+
+.registration .userloyaliti .loyaliti {
+  width: 57%;
+}
+
+.registration .userloyaliti .loyaliti .loyal {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .userloyaliti .loyaliti .loyaltext {
+  margin: 22px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .userloyaliti .loyaliti .check .loyallist {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-left: 43px;
+  list-style-image: url("pic/check.svg");
+}
+
+>>>>>>> Stashed changes
 .text {
   font-size: 14px;
   line-height: 17px;
@@ -1109,10 +1401,6 @@ body {
   border-radius: 0 20px 20px 0;
   padding: 7px 8px;
   background-color: #F16D7F;
-}
-
-li {
-  list-style-type: none;
 }
 
 span mark {
