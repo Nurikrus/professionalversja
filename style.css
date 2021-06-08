@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: Lato;
 }
@@ -256,20 +260,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360px;
-  height: 260px;
+  width: 31%;
+  min-height: 260px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .bestlist .font .textfont {
+  position: absolute;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.bestlist .font .textfont mark {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.bestlist .font .prodimg:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .bestlist .last {
@@ -277,7 +294,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 100%;
   height: 180px;
 }
 
@@ -1139,6 +1156,118 @@ body {
   color: #F26376;
 }
 
+
+.registration .userloyaliti {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration .userloyaliti .user {
+  width: 32%;
+}
+
+.registration .userloyaliti .user legend {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .userloyaliti .user .textinput {
+  margin-top: 20px;
+  padding: 12px 17px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 89%;
+}
+
+.registration .userloyaliti .user .checkmale {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin: 32px 10px 32px 0;
+}
+
+.registration .userloyaliti .user .margleft {
+  margin-left: 20px;
+}
+
+.registration .userloyaliti .user .login {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .userloyaliti .user .logintext {
+  margin: 15px 0 40px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration .userloyaliti .user .goproduct {
+  padding: 16px 29px;
+  border: 1px solid #FF6A6A;
+  background-color: #FF6A6A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration .userloyaliti .user .goproduct .textbut {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.registration .userloyaliti .user .goproduct:hover {
+  background-color: #fff;
+}
+
+.registration .userloyaliti .user .goproduct:hover .textbut {
+  color: #F26376;
+}
+
+.registration .userloyaliti .loyaliti {
+  width: 57%;
+}
+
+.registration .userloyaliti .loyaliti .loyal {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .userloyaliti .loyaliti .loyaltext {
+  margin: 22px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .userloyaliti .loyaliti .check .loyallist {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-left: 43px;
+  list-style-image: url("pic/check.svg");
+}
+
+
 .text {
   font-size: 14px;
   line-height: 17px;
@@ -1346,10 +1475,6 @@ body {
   border-radius: 0 20px 20px 0;
   padding: 7px 8px;
   background-color: #F16D7F;
-}
-
-li {
-  list-style-type: none;
 }
 
 span mark {

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 body {
     font-family: Lato;
 }
@@ -168,20 +172,30 @@ body {
     }
     .font {
         display: flex;
-        width: 360px;
-        height: 260px;
+        width: 31%;
+        min-height: 260px;
         justify-content: center;
+        text-align: center;
         align-items: center;
+        position: relative;
         .textfont {
+            position: absolute;
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;
+            mark {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+        .prodimg:hover {
+            filter: brightness(50%);
         }
     }
     .last {
         margin-top: 30px;
         display: flex;
-        width: 1140px;
+        width: 100%;
         height: 180px;
     }
 }
@@ -810,6 +824,102 @@ body {
     }
 }
 
+
+.registration {
+    .userloyaliti {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        .user {
+            width: 32%;
+            legend {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+            .textinput {
+                margin-top: 20px;
+                padding: 12px 17px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+                width: 89%;
+            }
+            .checkmale {
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+                margin: 32px 10px 32px 0;
+                
+            }
+            .margleft {
+                margin-left: 20px;
+            }            
+            .login {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+            .logintext {
+                margin: 15px 0 40px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+            .goproduct {
+                padding: 16px 29px;
+                border: 1px solid #FF6A6A;                
+                background-color: #FF6A6A;
+                display: flex;
+                .textbut {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    margin-right: 20px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    .textbut {
+                        color: #F26376;
+                    }
+                }
+            } 
+        }
+        .loyaliti {
+            width: 57%;
+            .loyal {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            .loyaltext {
+                margin: 22px 0;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            .check {                
+                .loyallist {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #000000;
+                    margin-left: 43px;
+                    list-style-image: url("pic/check.svg");
+                }
+            }
+        }
+    }
+}
+
+
 .text {
     font-size: 14px;
     line-height: 17px;
@@ -947,20 +1057,7 @@ body {
     }
 }
 
-li {
-    list-style-type: none;
-}
-
 span mark {
     color: #F16D7F;
     background-color: inherit;
 }
-
-
-
-
-
-
-
-
-
