@@ -34,6 +34,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 4%;
 }
 
 .logomenucolor .logomenu .logosearch {
@@ -65,7 +66,6 @@ body {
 }
 
 .logomenucolor .logomenu .logosearch .search .search-hover .search-text {
-  min-width: 270px;
   height: 28px;
   margin-left: 20px;
   border-radius: 10px 0 0 10px;
@@ -174,7 +174,6 @@ body {
 
 .previewcolor {
   background: #F1E4E6;
-  height: 100%;
 }
 
 .previewcolor .preview {
@@ -184,9 +183,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 3%;
+}
+
+.previewcolor .preview .previewimg {
+  width: 47%;
 }
 
 .previewcolor .preview .previewtext {
+  padding: 38% 0;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,15 +203,22 @@ body {
 
 .previewcolor .preview .previewtext .brand {
   width: 12px;
-  height: 92px;
+  height: 85%;
   background: #F16D7F;
 }
 
 .previewcolor .preview .previewtext .textpreview {
+  font-weight: 700;
   margin-left: 16px;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.previewcolor .preview .previewtext .textpreview b {
+  font-weight: 900;
   font-size: 42px;
   line-height: 58px;
-  color: #222222;
 }
 
 .previewcolor .catalogmenu {
@@ -229,7 +242,7 @@ body {
 }
 
 .bestlist {
-  margin-top: 65px;
+  margin-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,28 +253,12 @@ body {
           justify-content: space-between;
 }
 
-.bestlist .product1 {
-  background-image: url(pic/prod1.jpg);
-}
-
-.bestlist .product2 {
-  background-image: url(pic/prod2.jpg);
-}
-
-.bestlist .product3 {
-  background-image: url(pic/prod3.jpg);
-}
-
-.bestlist .product4 {
-  background-image: url(pic/prod4.jpg);
-}
-
 .bestlist .font {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 31%;
-  min-height: 260px;
+  margin-top: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -270,6 +267,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 0 1%;
 }
 
 .bestlist .font .textfont {
@@ -284,18 +282,20 @@ body {
   line-height: 29px;
 }
 
-.bestlist .font .prodimg:hover {
+.bestlist .font:hover .prodimg {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
+.bestlist .font .prodimg {
+  width: 100%;
+}
+
 .bestlist .last {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 180px;
 }
 
 .content {
@@ -331,10 +331,12 @@ body {
 }
 
 .content .list .item {
+  width: 31%;
   position: relative;
   margin-bottom: 30px;
   background: #F8F8F8;
   list-style-type: none;
+  margin: 1% 1%;
 }
 
 .content .list .item:hover .addbak {
@@ -345,17 +347,14 @@ body {
 
 .content .list .item .itemhover .card-link {
   display: block;
-  height: 581px;
-  width: 360px;
   text-decoration: none;
 }
 
 .content .list .item .itemhover .card-link .cardtext {
-  margin-left: 16px;
+  padding: 25px 12px 20px;
 }
 
 .content .list .item .itemhover .card-link .cardtext .cardname {
-  margin-top: 25px;
   margin-bottom: 12px;
   font-size: 13px;
   line-height: 16px;
@@ -367,6 +366,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.content .list .item .itemhover .card-link .item-img {
+  width: 100%;
 }
 
 .content .list .item .itemhover:hover {
@@ -1267,7 +1270,6 @@ body {
   list-style-image: url("pic/check.svg");
 }
 
-
 .text {
   font-size: 14px;
   line-height: 17px;
@@ -1283,7 +1285,6 @@ body {
 }
 
 .footer .delicolor .delivery {
-  height: 341px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1293,6 +1294,7 @@ body {
 }
 
 .footer .delicolor .delivery .delilist {
+  padding: 104px 0 104px;
   margin: auto;
   width: 360px;
   display: -webkit-box;
@@ -1326,12 +1328,11 @@ body {
 .footer .questionimage {
   background-image: url(pic/question.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 448px;
+  background-position: 25%;
+  background-size: cover;
 }
 
 .footer .questionimage .question {
-  height: 448px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,11 +1345,13 @@ body {
 }
 
 .footer .questionimage .question .help {
-  width: 360px;
+  padding: 11% 2%;
+  width: 32%;
 }
 
 .footer .questionimage .question .email {
-  width: 560px;
+  padding: 11% 2%;
+  width: 51%;
 }
 
 .footer .copyritecolor {
@@ -1356,7 +1359,7 @@ body {
 }
 
 .footer .copyritecolor .copyrite {
-  height: 79px;
+  padding: 3% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1422,14 +1425,18 @@ body {
 }
 
 .helpemail .textemail {
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 29px;
   text-align: center;
   color: #222224;
 }
 
+.helpemail .textemail b {
+  line-height: 162%;
+  font-size: 24px;
+}
+
 .helpemail .send {
-  width: 356px;
-  height: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1477,8 +1484,117 @@ body {
   background-color: #F16D7F;
 }
 
+.helpemail .send .butt_send:hover {
+  color: #F16D7F;
+  background-color: #FFFFFF;
+}
+
 span mark {
   color: #F16D7F;
   background-color: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  .previewcolor .preview .previewtext .textpreview {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .content .list .item {
+    width: 48%;
+  }
+  .footer .delicolor .delivery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .delicolor .delivery .delilist {
+    padding: 48px 0 0;
+  }
+  .footer .delicolor .delivery .last {
+    padding-bottom: 64px;
+  }
+  .footer .questionimage .question {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .questionimage .question .help {
+    padding-bottom: 0;
+  }
+  .footer .questionimage .question .email {
+    padding-bottom: 21%;
+  }
+  .footer .copyritecolor .copyrite {
+    padding: 3% 3%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .logomenucolor .logomenu .menubak .account {
+    display: none;
+  }
+  .logomenucolor .logomenu .menubak .bak {
+    display: none;
+  }
+  .previewcolor .preview .previewimg {
+    display: none;
+  }
+  .previewcolor .preview {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .previewcolor .preview .previewtext {
+    width: auto;
+    padding: 32% 0;
+  }
+  .previewcolor .preview .previewtext .textpreview {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .bestlist {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bestlist .font {
+    width: 96%;
+  }
+  .content .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .list .item {
+    width: 97%;
+  }
+  .footer .questionimage .question .help {
+    width: 85%;
+  }
+  .footer .questionimage .question .email {
+    width: 95%;
+  }
+  .helpemail .textemail {
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .footer .copyritecolor .copyrite {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .copyritecolor .copyrite .cont {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
