@@ -24,6 +24,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 4%;
         .logosearch {
             display: flex;
             align-items: center;
@@ -35,8 +36,7 @@ body {
                 }
                 .search-hover {
                     display: none;
-                    .search-text {
-                        min-width: 270px;
+                    .search-text {                        
                         height: 28px;
                         margin-left: 20px;
                         border-radius: 10px 0 0 10px;
@@ -114,24 +114,35 @@ body {
 }
 
 .previewcolor {
-    background: #F1E4E6;
-    height: 100%;
+    background: #F1E4E6;    
     .preview {
         display: flex;
         justify-content: space-between;
+        padding: 0 3%;
+        .previewimg {
+            width: 47%;            
+        }
         .previewtext {
+            padding: 38% 0;
+            width: 48%;
             display: flex;
             align-items: center;
             .brand {
                 width: 12px;
-                height: 92px;
+                height: 85%;
                 background: #F16D7F;
             }
             .textpreview {
+                b {
+                    font-weight: 900;
+                    font-size: 42px;                    
+                    line-height: 58px;
+                }
+                font-weight: 700;
                 margin-left: 16px;
-                font-size: 42px;
-                line-height: 58px;
-                color: #222222;
+                font-size: 32px;
+                line-height: 38px;
+                color: #222222;                
             }
         }
     }
@@ -153,30 +164,19 @@ body {
 }
 
 .bestlist {    
-    margin-top: 65px;
+    margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .product1 {
-        background-image: url(pic/prod1.jpg);
-    }
-    .product2 {
-        background-image: url(pic/prod2.jpg);
-    }
-    .product3 {
-        background-image: url(pic/prod3.jpg);
-    }
-    .product4 {
-        background-image: url(pic/prod4.jpg);
-    }
     .font {
         display: flex;
         width: 31%;
-        min-height: 260px;
+        margin-top: 30px;        
         justify-content: center;
         text-align: center;
         align-items: center;
         position: relative;
+        padding: 0 1%;
         .textfont {
             position: absolute;
             font-size: 16px;
@@ -185,17 +185,20 @@ body {
             mark {
                 font-size: 24px;
                 line-height: 29px;
-            }
+            }            
         }
-        .prodimg:hover {
+        &:hover .prodimg{
             filter: brightness(50%);
         }
+        .prodimg {
+            width: 100%;
+            
+        }
+        
     }
     .last {
-        margin-top: 30px;
         display: flex;
         width: 100%;
-        height: 180px;
     }
 }
 
@@ -215,24 +218,22 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         .item {
+            width: 31%;
             position: relative;
             margin-bottom: 30px;
             background: #F8F8F8;
             list-style-type: none;
+            margin: 1% 1%;
             &:hover .addbak {
                 display: flex;
             }
-            .itemhover {
-                
+            .itemhover {                
                 .card-link {
-                    display: block;
-                    height: 581px;
-                    width: 360px;
+                    display: block;                                       
                     text-decoration: none;
                     .cardtext {
-                        margin-left: 16px;
-                        .cardname {
-                            margin-top: 25px;
+                        padding: 25px 12px 20px;
+                        .cardname {                            
                             margin-bottom: 12px;
                             font-size: 13px;
                             line-height: 16px;
@@ -244,6 +245,9 @@ body {
                             line-height: 19px;
                             color: #F16D7F;
                         }
+                    }
+                    .item-img {
+                        width: 100%;
                     }
                 }
                 &:hover {
@@ -639,8 +643,6 @@ body {
 
 }
 
-<<<<<<< Updated upstream
-=======
 .card {
     display: flex;
     justify-content: space-between;
@@ -865,7 +867,6 @@ body {
     }
 }
 
->>>>>>> Stashed changes
 .text {
     font-size: 14px;
     line-height: 17px;
@@ -877,10 +878,10 @@ body {
     .delicolor {
         background-color: black;
         .delivery {
-            height: 341px;
             display: flex;
             justify-content: space-between;
             .delilist {
+                padding: 104px 0 104px;
                 margin: auto;
                 width: 360px;
                 display: flex;
@@ -905,26 +906,29 @@ body {
     }
     .questionimage {
         background-image: url(pic/question.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 448px;
+        background-repeat: no-repeat;  
+        background-position: 25%;  
+        background-size: cover;   
         .question {
-            height: 448px;
+                        
             display: flex;
             align-items: center;
             justify-content: space-between;
             .help {
-                width: 360px;
+                padding: 11% 2%;
+                width: 32%;
+
             }
-            .email {
-                width: 560px;
+            .email {                
+                padding: 11% 2%;
+                width: 51%;
             }
         }
     }
     .copyritecolor {
         background-color: black;
         .copyrite {
-            height: 79px;
+            padding: 3% 1%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -952,7 +956,7 @@ body {
     }
 }
 
-.helpemail {
+.helpemail {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -964,13 +968,16 @@ body {
         color: #222224;
     }
     .textemail {
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 29px;
         text-align: center;
         color: #222224;
+        b {
+            line-height: 162%;
+            font-size: 24px;
+        }
     }
     .send {
-        width: 356px;
-        height: 49px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -999,6 +1006,10 @@ body {
             border-radius: 0 20px 20px 0;
             padding: 7px 8px;
             background-color: #F16D7F;
+            &:hover {
+                color: #F16D7F;
+                background-color: #FFFFFF;
+            }
         }
     }
 }
@@ -1006,4 +1017,91 @@ body {
 span mark {
     color: #F16D7F;
     background-color: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+    .previewcolor .preview .previewtext .textpreview {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .content .list .item {
+        width: 48%;
+    }
+    .footer .delicolor .delivery {
+        flex-direction: column;
+        .delilist {
+            padding: 48px 0 0;
+        }
+        .last {
+            padding-bottom: 64px;
+        }        
+    }
+    .footer .questionimage .question {
+        flex-direction: column;
+    }
+    .footer .questionimage .question .help {
+        padding-bottom: 0;
+    }
+    .footer .questionimage .question .email {
+        padding-bottom: 21%;
+    }
+    .footer .copyritecolor .copyrite {
+        padding: 3% 3%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .logomenucolor .logomenu .menubak .account {
+        display: none;
+    }
+    .logomenucolor .logomenu .menubak .bak {
+        display: none;
+    }
+    .previewcolor .preview .previewimg {
+        display: none;
+    }
+    .previewcolor .preview {
+        justify-content: center;
+        .previewtext {
+            width: auto;
+            padding: 32% 0;
+            .textpreview {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }    
+    }
+    .bestlist {
+        justify-content: center;
+        .font {
+            width: 96%;
+        }    
+    }
+    .content .list {
+        justify-content: center;
+        .item {
+            width: 97%;
+        }    
+    }
+    .footer .questionimage .question {
+        .help {
+            width: 85%;
+        }
+        .email {
+            width: 95%;            
+        }    
+    }
+    .helpemail .textemail {
+        line-height: 18px;
+        font-size: 16px;
+    }
+    .footer .copyritecolor .copyrite { 
+        flex-direction: column; 
+        justify-content: center;      
+        .cont {
+            order: -1; 
+            padding: 10%;           
+        }        
+    }
 }
