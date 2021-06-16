@@ -3,8 +3,24 @@
     padding: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style-type: none;
+    padding: 0;
 }
 
 body {
@@ -14,6 +30,7 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 1%;
 }
 
 .logomenucolor {
@@ -24,7 +41,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 4%;
+        padding: 0 2%;
         .logosearch {
             display: flex;
             align-items: center;
@@ -36,19 +53,20 @@ body {
                 }
                 .search-hover {
                     display: none;
+                    align-items: center;
                     .search-text {                        
                         height: 28px;
                         margin-left: 20px;
                         border-radius: 10px 0 0 10px;
-                        padding: 5px 15px;
+                        padding: 5px 10px;
                         border: 0px;
                         outline: none;
+                        box-sizing: unset;
                     }
                     .butt_search {
                         height: 39px;
-                        margin-left: -5px;
                         border-radius: 0 10px 10px 0;
-                        padding: 10px;
+                        padding: 5px 10px;
                         border: 0px;
                         background-color: #F16D7F;
                     }
@@ -112,6 +130,7 @@ body {
             }
             &:hover .listhover{
                 display: flex;
+                z-index: 1;
             }
         }
     }
@@ -167,6 +186,13 @@ body {
             font-size: 14px;
             line-height: 17px;
             color: #636363;
+            a {
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+            }
         }
     }
 }
@@ -317,7 +343,7 @@ body {
     display: flex;
     
     flex-direction: column;
-    margin-top: 96px;    
+    margin-top: 76px;    
     .filter {
         display: flex;
         position: relative;        
@@ -329,31 +355,79 @@ body {
             .filterrel {
                 position: relative;
                 display: flex;
-                .filtertext {
-                    margin-right: 11px;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #000000;
+                padding: 20px;
+                &:hover {
+                    width: 360px;
+                    background: #FFFFFF;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                    .filtericon .filtertext {
+                        color: #EF5B70;
+                    }                    
+                    .filtermenu {
+                        display: flex;
+                        z-index: 1;
+                        position: absolute;
+                    }
                 }
-                .filtermenu {
+                .filtericon {
+                    display: flex;
+                    .filtertext {
+                        margin-right: 11px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                        margin-bottom: 0;
+                    }
+                }
+                .filtermenu {                    
+                    display: none;
                     position: absolute;
-                    top: 30px;
+                    top: 45px;
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    left: 0;
+                    .menulist {
+                        width: 100%;
+                        padding: 20px;
+                        .manmenu {
+                            border: none;
+                            border-left: 5px solid #EF5B70;
+                            border-bottom: 1px solid#EBEBEB;
+                            background-color: #FFFFFF;                            
+                            width: 100%;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #EF5B70;
+                        }                        
+                        .listmenu {
+                            display: flex;
+                            flex-direction: column;                                                            
+                            text-decoration: none;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #6F6E6E;
+                        }
+                          
+                    }                      
                 }
             }
             
         }
         .filter {
             display: flex;
+            padding-top: 20px;            
             .trend {
                 display: flex;
                 align-items: center;
+                margin: 0 15px;
                 .catalogtext {
                     font-size: 14px;
                     line-height: 17px;
                     color: #6F6E6E;
                     width: 100%;
                     margin-right: 10px;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -364,24 +438,22 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         .item {
+            width: 31%;
             position: relative;
             margin-bottom: 30px;
             background: #F8F8F8;
             list-style-type: none;
+            margin: 1% 1%;
             &:hover .addbak {
                 display: flex;
             }
-            .itemhover {
-                
+            .itemhover {                
                 .card-link {
-                    display: block;
-                    height: 581px;
-                    width: 360px;
+                    display: block;                                       
                     text-decoration: none;
                     .cardtext {
-                        margin-left: 16px;
-                        .cardname {
-                            margin-top: 25px;
+                        padding: 25px 12px 20px;
+                        .cardname {                            
                             margin-bottom: 12px;
                             font-size: 13px;
                             line-height: 16px;
@@ -393,6 +465,9 @@ body {
                             line-height: 19px;
                             color: #F16D7F;
                         }
+                    }
+                    .item-img {
+                        width: 100%;
                     }
                 }
                 &:hover {
@@ -464,31 +539,40 @@ body {
         }
     }
 }
-
+.productimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    width: 100%;
+    .leftrigth {
+        padding: 12px 17px;
+        background: rgba(42, 42, 42, 0.15);
+        .fas {
+            font-size: 40px;
+        }
+    }
+}
 .productpage {
     display: flex;
     flex-direction: column;
-    .description {
+    .description {        
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
         .productinfo {
-            position: absolute;
+            margin-top: -40px;
             background: #fff;
-            border: 1px solid #EAEAEA;
-            top: 712px;
+            border: 1px solid #EAEAEA;            
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 1141px;
+            width: 98%;
             height: 601px;
-            padding-bottom: 65px;
-            box-sizing: border-box;
             .productinfotext {
                 border-bottom: 1px solid #EAEAEA;
                 padding: 65px 42px 65px 42px;
-                width: 640px;
+                width: 66%;
                 margin-bottom: 65px;
                 display: flex;
                 flex-direction: column;
@@ -519,7 +603,7 @@ body {
                     color: #5E5E5E;
                     margin-top: 48px;
                     margin-bottom: 32px;
-                    width: 640px;
+                    width: 100%;                    
                 }
                 .price {
                     font-weight: 300;
@@ -575,29 +659,27 @@ body {
 
     }
     .list {
-        margin-top: 668px;
+        margin-top: 47px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .item {
+            width: 31%;
             position: relative;
             margin-bottom: 30px;
             background: #F8F8F8;
             list-style-type: none;
+            margin: 1% 1%;
             &:hover .addbak {
                 display: flex;
             }
-            .itemhover {
-                
+            .itemhover {                
                 .card-link {
-                    display: block;
-                    height: 581px;
-                    width: 360px;
+                    display: block;                                       
                     text-decoration: none;
                     .cardtext {
-                        margin-left: 16px;
-                        .cardname {
-                            margin-top: 25px;
+                        padding: 25px 12px 20px;
+                        .cardname {                            
                             margin-bottom: 12px;
                             font-size: 13px;
                             line-height: 16px;
@@ -609,6 +691,9 @@ body {
                             line-height: 19px;
                             color: #F16D7F;
                         }
+                    }
+                    .item-img {
+                        width: 100%;
                     }
                 }
                 &:hover {
@@ -647,8 +732,6 @@ body {
             }
         }
     }
-
-
 }
 
 .card {
@@ -656,7 +739,7 @@ body {
     justify-content: space-between;
     margin-top: 96px;
     .cardbak {
-        width: 652px;
+        width: 53%;
         .cardlist {
             .cardname {
                 display: flex;
@@ -664,6 +747,10 @@ body {
                 margin-bottom: 40px;
                 background-color: #FFFFFF;
                 transition: all 2s;
+                width: 100%;
+                .cadrimg {
+                    width: 40%;
+                }
                 &:hover {
                     z-index: 1;                    
                     transform: translatex(200px) scale(1.2, 1.2);
@@ -671,7 +758,7 @@ body {
                 .cardinfo {
                     padding: 22px 31px;
                     position: relative;
-                    width: 390px;
+                    width: 60%;
                     .productname {
                         font-size: 24px;
                         line-height: 29px;
@@ -690,7 +777,9 @@ body {
             display: flex;
             justify-content: space-between;
             margin-top: 72px;
+            width: 100%;
             .cardbut {
+                width: 47%;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 17px;
@@ -701,8 +790,9 @@ body {
         }
     }
     .shipping {
+        width: 36%;
         .adress {
-            width: 360px;
+            width: 100%;
             margin-top: 17px;
             .nameadress {
                 font-weight: 300;
@@ -716,7 +806,7 @@ body {
                 line-height: 16px;
                 color: #222222;
                 margin-top: 20px;
-                width: 100%;
+                width: 93%;
                 padding: 16px 12px;
                 border: 1px solid #A4A4A4;
             }
@@ -1025,10 +1115,15 @@ body {
 span mark {
     color: #F16D7F;
     background-color: inherit;
+    a {
+        color: #F16D7F;
+    }
 }
 
-input:focus {
-    outline: none !important;
+input {
+    &:hover, &:focus, &:active{
+        outline: none !important;        
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1038,6 +1133,50 @@ input:focus {
     }
     .content .list .item {
         width: 48%;
+    }
+    .catalog .filter {
+        justify-content: right;
+    }
+    .catalog .list .item {
+        width: 48%;
+    }
+    .productpage .list .item {
+        width: 48%;
+    }
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        .cardbak {
+            width: 100%;
+            .cardlist {
+                .cardname {  
+                    justify-content: center;                  
+                    transition: none;
+                    transform: none;
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+            .button {
+                justify-content: space-around;
+                .cardbut {
+                    width: 38%;
+                }
+            }
+        }
+        .shipping {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .adress {
+                width: 46%;
+            }
+            .checkout {
+                width: 40%;
+            }
+        }
     }
     .footer .delicolor .delivery {
         flex-direction: column;
@@ -1084,6 +1223,12 @@ input:focus {
             }
         }    
     }
+    .previewcolor .catalogmenu {
+        flex-direction: column;
+        .previewcatalog {
+            margin-bottom: 32px;
+        }
+    }
     .bestlist {
         justify-content: center;
         .font {
@@ -1095,6 +1240,48 @@ input:focus {
         .item {
             width: 97%;
         }    
+    }
+    .catalog .list {
+        justify-content: center;
+        .item {
+            width: 97%;
+        }    
+    }
+    .productpage .list {
+        justify-content: center;
+        .item {
+            width: 97%;
+        }    
+    }
+    .productpage .description .productinfo .chose .trend .catalogtext {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .catalog .filter .product .filterrel .filtericon .filtertext {
+        display: none;
+    }
+    .card {        
+        .shipping {
+            flex-direction: column;            
+            .adress {
+                width: 100%;
+            }
+            .checkout {
+                width: 85%;
+            }
+        }
+    }
+    .registration {
+        .userloyaliti {
+            flex-direction: column;
+            .user {
+                width: 100%;
+            }
+            .loyaliti {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
     }
     .footer .questionimage .question {
         .help {

@@ -3,8 +3,24 @@
   padding: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
+  padding: 0;
 }
 
 body {
@@ -14,6 +30,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 1%;
 }
 
 .logomenucolor {
@@ -34,7 +51,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 4%;
+  padding: 0 2%;
 }
 
 .logomenucolor .logomenu .logosearch {
@@ -63,22 +80,26 @@ body {
 
 .logomenucolor .logomenu .logosearch .search .search-hover {
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logomenucolor .logomenu .logosearch .search .search-hover .search-text {
   height: 28px;
   margin-left: 20px;
   border-radius: 10px 0 0 10px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border: 0px;
   outline: none;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
 }
 
 .logomenucolor .logomenu .logosearch .search .search-hover .butt_search {
   height: 39px;
-  margin-left: -5px;
   border-radius: 0 10px 10px 0;
-  padding: 10px;
+  padding: 5px 10px;
   border: 0px;
   background-color: #F16D7F;
 }
@@ -172,6 +193,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 .margleft {
@@ -241,6 +263,14 @@ body {
 }
 
 .previewcolor .catalogmenu .path {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.previewcolor .catalogmenu .path a {
+  text-decoration: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -456,7 +486,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 96px;
+  margin-top: 76px;
 }
 
 .catalog .filter {
@@ -482,25 +512,87 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px;
 }
 
-.catalog .filter .product .filterrel .filtertext {
+.catalog .filter .product .filterrel:hover {
+  width: 360px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.catalog .filter .product .filterrel:hover .filtericon .filtertext {
+  color: #EF5B70;
+}
+
+.catalog .filter .product .filterrel:hover .filtermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+}
+
+.catalog .filter .product .filterrel .filtericon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog .filter .product .filterrel .filtericon .filtertext {
   margin-right: 11px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  margin-bottom: 0;
 }
 
 .catalog .filter .product .filterrel .filtermenu {
+  display: none;
   position: absolute;
-  top: 30px;
+  top: 45px;
+  background-color: #FFFFFF;
+  width: 100%;
+  left: 0;
+}
+
+.catalog .filter .product .filterrel .filtermenu .menulist {
+  width: 100%;
+  padding: 20px;
+}
+
+.catalog .filter .product .filterrel .filtermenu .menulist .manmenu {
+  border: none;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  background-color: #FFFFFF;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+}
+
+.catalog .filter .product .filterrel .filtermenu .menulist .listmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 }
 
 .catalog .filter .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 20px;
 }
 
 .catalog .filter .filter .trend {
@@ -510,6 +602,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 15px;
 }
 
 .catalog .filter .filter .trend .catalogtext {
@@ -518,6 +611,7 @@ body {
   color: #6F6E6E;
   width: 100%;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .catalog .list {
@@ -533,10 +627,12 @@ body {
 }
 
 .catalog .list .item {
+  width: 31%;
   position: relative;
   margin-bottom: 30px;
   background: #F8F8F8;
   list-style-type: none;
+  margin: 1% 1%;
 }
 
 .catalog .list .item:hover .addbak {
@@ -547,17 +643,14 @@ body {
 
 .catalog .list .item .itemhover .card-link {
   display: block;
-  height: 581px;
-  width: 360px;
   text-decoration: none;
 }
 
 .catalog .list .item .itemhover .card-link .cardtext {
-  margin-left: 16px;
+  padding: 25px 12px 20px;
 }
 
 .catalog .list .item .itemhover .card-link .cardtext .cardname {
-  margin-top: 25px;
   margin-bottom: 12px;
   font-size: 13px;
   line-height: 16px;
@@ -569,6 +662,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.catalog .list .item .itemhover .card-link .item-img {
+  width: 100%;
 }
 
 .catalog .list .item .itemhover:hover {
@@ -663,6 +760,29 @@ body {
   opacity: 0.3;
 }
 
+.productimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F7F7F7;
+  width: 100%;
+}
+
+.productimg .leftrigth {
+  padding: 12px 17px;
+  background: rgba(42, 42, 42, 0.15);
+}
+
+.productimg .leftrigth .fas {
+  font-size: 40px;
+}
+
 .productpage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,14 +804,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .productpage .description .productinfo {
-  position: absolute;
+  margin-top: -40px;
   background: #fff;
   border: 1px solid #EAEAEA;
-  top: 712px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,17 +820,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1141px;
+  width: 98%;
   height: 601px;
-  padding-bottom: 65px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .productpage .description .productinfo .productinfotext {
   border-bottom: 1px solid #EAEAEA;
   padding: 65px 42px 65px 42px;
-  width: 640px;
+  width: 66%;
   margin-bottom: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,7 +870,7 @@ body {
   color: #5E5E5E;
   margin-top: 48px;
   margin-bottom: 32px;
-  width: 640px;
+  width: 100%;
 }
 
 .productpage .description .productinfo .productinfotext .price {
@@ -829,7 +944,7 @@ body {
 }
 
 .productpage .list {
-  margin-top: 668px;
+  margin-top: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,10 +956,12 @@ body {
 }
 
 .productpage .list .item {
+  width: 31%;
   position: relative;
   margin-bottom: 30px;
   background: #F8F8F8;
   list-style-type: none;
+  margin: 1% 1%;
 }
 
 .productpage .list .item:hover .addbak {
@@ -855,17 +972,14 @@ body {
 
 .productpage .list .item .itemhover .card-link {
   display: block;
-  height: 581px;
-  width: 360px;
   text-decoration: none;
 }
 
 .productpage .list .item .itemhover .card-link .cardtext {
-  margin-left: 16px;
+  padding: 25px 12px 20px;
 }
 
 .productpage .list .item .itemhover .card-link .cardtext .cardname {
-  margin-top: 25px;
   margin-bottom: 12px;
   font-size: 13px;
   line-height: 16px;
@@ -877,6 +991,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.productpage .list .item .itemhover .card-link .item-img {
+  width: 100%;
 }
 
 .productpage .list .item .itemhover:hover {
@@ -940,7 +1058,7 @@ body {
 }
 
 .card .cardbak {
-  width: 652px;
+  width: 53%;
 }
 
 .card .cardbak .cardlist .cardname {
@@ -953,6 +1071,11 @@ body {
   background-color: #FFFFFF;
   -webkit-transition: all 2s;
   transition: all 2s;
+  width: 100%;
+}
+
+.card .cardbak .cardlist .cardname .cadrimg {
+  width: 40%;
 }
 
 .card .cardbak .cardlist .cardname:hover {
@@ -964,7 +1087,7 @@ body {
 .card .cardbak .cardlist .cardname .cardinfo {
   padding: 22px 31px;
   position: relative;
-  width: 390px;
+  width: 60%;
 }
 
 .card .cardbak .cardlist .cardname .cardinfo .productname {
@@ -988,9 +1111,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 72px;
+  width: 100%;
 }
 
 .card .cardbak .button .cardbut {
+  width: 47%;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -999,8 +1124,12 @@ body {
   border: 1px solid #A4A4A4;
 }
 
+.card .shipping {
+  width: 36%;
+}
+
 .card .shipping .adress {
-  width: 360px;
+  width: 100%;
   margin-top: 17px;
 }
 
@@ -1017,7 +1146,7 @@ body {
   line-height: 16px;
   color: #222222;
   margin-top: 20px;
-  width: 100%;
+  width: 93%;
   padding: 16px 12px;
   border: 1px solid #A4A4A4;
 }
@@ -1425,7 +1554,11 @@ span mark {
   background-color: inherit;
 }
 
-input:focus {
+span mark a {
+  color: #F16D7F;
+}
+
+input:hover, input:focus, input:active {
   outline: none !important;
 }
 
@@ -1436,6 +1569,68 @@ input:focus {
   }
   .content .list .item {
     width: 48%;
+  }
+  .catalog .filter {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .catalog .list .item {
+    width: 48%;
+  }
+  .productpage .list .item {
+    width: 48%;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card .cardbak {
+    width: 100%;
+  }
+  .card .cardbak .cardlist .cardname {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .card .cardbak .cardlist .cardname:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .card .cardbak .button {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card .cardbak .button .cardbut {
+    width: 38%;
+  }
+  .card .shipping {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card .shipping .adress {
+    width: 46%;
+  }
+  .card .shipping .checkout {
+    width: 40%;
   }
   .footer .delicolor .delivery {
     -webkit-box-orient: vertical;
@@ -1490,6 +1685,15 @@ input:focus {
     font-size: 20px;
     line-height: 24px;
   }
+  .previewcolor .catalogmenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .previewcolor .catalogmenu .previewcatalog {
+    margin-bottom: 32px;
+  }
   .bestlist {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1505,6 +1709,54 @@ input:focus {
   }
   .content .list .item {
     width: 97%;
+  }
+  .catalog .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog .list .item {
+    width: 97%;
+  }
+  .productpage .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productpage .list .item {
+    width: 97%;
+  }
+  .productpage .description .productinfo .chose .trend .catalogtext {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .catalog .filter .product .filterrel .filtericon .filtertext {
+    display: none;
+  }
+  .card .shipping {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .shipping .adress {
+    width: 100%;
+  }
+  .card .shipping .checkout {
+    width: 85%;
+  }
+  .registration .userloyaliti {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration .userloyaliti .user {
+    width: 100%;
+  }
+  .registration .userloyaliti .loyaliti {
+    width: 100%;
+    margin-top: 40px;
   }
   .footer .questionimage .question .help {
     width: 85%;
