@@ -130,7 +130,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 
 .logomenucolor .menubak .menu .listhover .menulist .manmenu {
@@ -141,6 +141,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
 .logomenucolor .menubak .menu .listhover .menulist .manmenu .listmenu {
@@ -149,6 +154,8 @@ body {
   line-height: 17px;
   color: #6F6E6E;
   text-decoration: none;
+  margin-top: 11px;
+  margin-left: 20px;
 }
 
 .logomenucolor .menubak .menu .listhover .menulist .manmenu .listmenu:hover {
@@ -1416,6 +1423,10 @@ body {
 span mark {
   color: #F16D7F;
   background-color: inherit;
+}
+
+input:focus {
+  outline: none !important;
 }
 
 @media screen and (max-width: 1024px) {
