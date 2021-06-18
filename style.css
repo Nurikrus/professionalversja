@@ -51,7 +51,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   padding: 0 2%;
+
 }
 
 .logomenucolor .logomenu .logosearch {
@@ -131,6 +133,7 @@ body {
           flex-direction: column;
   position: absolute;
   top: 60px;
+  z-index: 1;
 }
 
 .logomenucolor .menubak .menu .listhover .menulist {
@@ -219,7 +222,9 @@ body {
 }
 
 .previewcolor .preview .previewtext {
+
   padding: 29% 0;
+
   width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +236,9 @@ body {
 
 .previewcolor .preview .previewtext .brand {
   width: 12px;
+
   height: 10vh;
+
   background: #F16D7F;
 }
 
@@ -499,10 +506,11 @@ body {
   display: flex;
   position: absolute;
   left: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .catalog .filter .product .filterrel {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,17 +543,21 @@ body {
 }
 
 .catalog .filter .product .filterrel .filtericon .filtertext {
+
   margin-right: 11px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+
   margin-bottom: 0;
+
 }
 
 .catalog .filter .product .filterrel .filtermenu {
   display: none;
   position: absolute;
+
   top: 45px;
   background-color: #FFFFFF;
   width: 100%;
@@ -569,6 +581,7 @@ body {
 }
 
 .catalog .filter .product .filterrel .filtermenu .menulist .listmenu {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,17 +589,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
   text-decoration: none;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+
 }
 
 .catalog .filter .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   padding-top: 20px;
+
 }
 
 .catalog .filter .filter .trend {
@@ -596,7 +613,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   margin: 0 15px;
+
 }
 
 .catalog .filter .filter .trend .catalogtext {
@@ -1204,6 +1223,7 @@ body {
   color: #F26376;
 }
 
+
 .registration .userloyaliti {
   margin-top: 64px;
   display: -webkit-box;
@@ -1541,6 +1561,7 @@ span mark {
   background-color: inherit;
 }
 
+
 span mark a {
   color: #F16D7F;
 }
@@ -1548,6 +1569,7 @@ span mark a {
 input:hover, input:focus, input:active {
   outline: none !important;
 }
+
 
 @media screen and (max-width: 1024px) {
   .previewcolor .preview .previewtext .textpreview {
@@ -1557,6 +1579,7 @@ input:hover, input:focus, input:active {
   .content .list .item {
     width: 48%;
   }
+
   .catalog .filter {
     -webkit-box-pack: right;
         -ms-flex-pack: right;
@@ -1622,6 +1645,7 @@ input:hover, input:focus, input:active {
   .card .shipping .checkout {
     width: 40%;
   }
+
   .footer .delicolor .delivery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1675,6 +1699,7 @@ input:hover, input:focus, input:active {
     font-size: 20px;
     line-height: 24px;
   }
+
   .previewcolor .catalogmenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1684,6 +1709,7 @@ input:hover, input:focus, input:active {
   .previewcolor .catalogmenu .previewcatalog {
     margin-bottom: 32px;
   }
+
   .bestlist {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1700,6 +1726,7 @@ input:hover, input:focus, input:active {
   .content .list .item {
     width: 97%;
   }
+
   .catalog .list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1781,6 +1808,7 @@ input:hover, input:focus, input:active {
     width: 100%;
     margin-top: 40px;
   }
+
   .footer .questionimage .question .help {
     width: 85%;
   }

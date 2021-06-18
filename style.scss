@@ -41,7 +41,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         padding: 0 2%;
+
         .logosearch {
             display: flex;
             align-items: center;
@@ -53,7 +55,9 @@ body {
                 }
                 .search-hover {
                     display: none;
+
                     align-items: center;
+
                     .search-text {                        
                         height: 28px;
                         margin-left: 20px;
@@ -86,6 +90,7 @@ body {
                 flex-direction: column;
                 position: absolute;
                 top: 60px;
+                z-index: 1;
                 .menulist {
                     display: flex;
                     flex-direction: column;
@@ -150,13 +155,17 @@ body {
             width: 47%;            
         }
         .previewtext {
+
             padding: 29% 0;
+
             width: 48%;
             display: flex;
             align-items: center;
             .brand {
                 width: 12px;
+
                 height: 10vh;
+
                 background: #F16D7F;
             }
             .textpreview {
@@ -345,10 +354,13 @@ body {
         .product {
             display: flex;
             position: absolute;
-            left: 0; 
+            left: 0;             
+            background-color: #fff;
+            z-index: 1;
+            
             .filterrel {
-                position: relative;
                 display: flex;
+
                 padding: 20px;
                 &:hover {
                     width: 360px;
@@ -365,12 +377,14 @@ body {
                 }
                 .filtericon {
                     display: flex;
+
                     .filtertext {
                         margin-right: 11px;
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 17px;
                         color: #000000;
+
                         margin-bottom: 0;
                     }
                 }
@@ -404,17 +418,20 @@ body {
                         }
                           
                     }                      
+
                 }
             }
             
         }
         .filter {
             display: flex;
+
             padding-top: 20px;            
             .trend {
                 display: flex;
                 align-items: center;
                 margin: 0 15px;
+
                 .catalogtext {
                     font-size: 14px;
                     line-height: 17px;
@@ -858,6 +875,7 @@ body {
     }
 }
 
+
 .registration {
     .userloyaliti {
         margin-top: 64px;
@@ -1196,6 +1214,39 @@ input {
     }
 }
 
+
+@media screen and (max-width: 1024px) {
+    .previewcolor .preview .previewtext .textpreview {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .content .list .item {
+        width: 48%;
+    }
+    .footer .delicolor .delivery {
+        flex-direction: column;
+        .delilist {
+            padding: 48px 0 0;
+        }
+        .last {
+            padding-bottom: 64px;
+        }        
+    }
+    .footer .questionimage .question {
+        flex-direction: column;
+    }
+    .footer .questionimage .question .help {
+        padding-bottom: 0;
+    }
+    .footer .questionimage .question .email {
+        padding-bottom: 21%;
+    }
+    .footer .copyritecolor .copyrite {
+        padding: 3% 3%;
+    }
+}
+
+
 @media screen and (max-width: 667px) {
     .logomenucolor .logomenu .menubak .account {
         display: none;
@@ -1218,12 +1269,14 @@ input {
             }
         }    
     }
+
     .previewcolor .catalogmenu {
         flex-direction: column;
         .previewcatalog {
             margin-bottom: 32px;
         }
     }
+
     .bestlist {
         justify-content: center;
         .font {
@@ -1236,6 +1289,7 @@ input {
             width: 97%;
         }    
     }
+
     .catalog .list {
         justify-content: center;
         .item {
@@ -1323,6 +1377,7 @@ input {
             }
         }
     }
+
     .footer .questionimage .question {
         .help {
             width: 85%;
