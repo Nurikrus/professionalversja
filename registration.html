@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <script src="https://kit.fontawesome.com/efe89e8818.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,7 +23,7 @@
                         <img src="pic/search.svg" alt="pic">
                         <div class="search-hover">
                             <input class="search-text" type="text" placeholder="Input text">
-                            <button class="butt_search" type="submit">Search</button>
+                            <input class="butt_search" type="button" value="Search">
                         </div>
                     </form>
                 </div>
@@ -74,12 +75,10 @@
 
     <div class="registration container">
         <div class="userloyaliti">
-            <form action="" class="user">
-                <legend>Your Name</legend>
-                <input class="textinput" id="name" placeholder="First Name" autofocus="" required=""
-                    pattern="\S+[А-яа-я]"><br>
-                <input class="textinput" id="name" placeholder="Last Name" autofocus="" required=""
-                    pattern="\S+[А-яа-я]"><br>
+            <form class="user">
+                <p class="legend">Your Name</p>
+                <input class="textinput" id="fname" placeholder="First Name" pattern="\S+[А-яа-я]"><br>
+                <input class="textinput" id="lname" placeholder="Last Name" pattern="\S+[А-яа-я]"><br>
                 <p><input class="checkmale" type="radio" name="answer" value="a1">Male
                     <input class="checkmale margleft" type="radio" name="answer" value="a2">Female<Br>
                 </p>
@@ -91,10 +90,7 @@
                     Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
                     letters
                 </p>
-                <button class="goproduct" type="submit">
-                    <p class="textbut">JOIN NOW</p>
-                    <img src="pic/right1.svg" alt="pic">
-                </button>
+                <button class="goproduct" type="submit">JOIN NOW<i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
             <div class="loyaliti">
                 <h3 class="loyal">LOYALTY HAS ITS PERKS</h3>
@@ -134,7 +130,7 @@
                     <div class="helpemail">
                         <p class="textemail"><b>SUBSCRIBE</b> <br>
                             FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form class="send" action="">
+                        <form class="send">
                             <input class="sendmail" type="text" placeholder="Enter Your Email">
                             <button class="butt_send" type="submit">Subscribe</button>
                         </form>
