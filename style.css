@@ -1565,6 +1565,9 @@ input:hover, input:focus, input:active {
   .catalog .list .item {
     width: 48%;
   }
+  .productimg img {
+    width: 85%;
+  }
   .productpage .list .item {
     width: 48%;
   }
@@ -1704,6 +1707,12 @@ input:hover, input:focus, input:active {
   }
   .catalog .list .item {
     width: 97%;
+  }
+  .productimg img {
+    width: 85%;
+  }
+  .productimg .leftrigth .fas {
+    font-size: 17px;
   }
   .productpage .list {
     -webkit-box-pack: center;

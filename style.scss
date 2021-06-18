@@ -1130,6 +1130,11 @@ input {
     .catalog .list .item {
         width: 48%;
     }
+    .productimg {
+        img {
+            width: 85%;
+        }
+    }
     .productpage .list .item {
         width: 48%;
     }
@@ -1236,6 +1241,16 @@ input {
         .item {
             width: 97%;
         }    
+    }
+    .productimg {
+        img {
+            width: 85%;
+        }
+        .leftrigth {
+            .fas {
+                font-size: 17px;
+            }
+        }
     }
     .productpage .list {
         justify-content: center;
