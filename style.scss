@@ -23,6 +23,10 @@ li {
     padding: 0;
 }
 
+nav {
+    align-self: center;
+    box-sizing: unset;
+}
 body {
     font-family: Lato;
 }
@@ -41,9 +45,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         padding: 0 2%;
-
         .logosearch {
             display: flex;
             align-items: center;
@@ -55,9 +57,7 @@ body {
                 }
                 .search-hover {
                     display: none;
-
                     align-items: center;
-
                     .search-text {                        
                         height: 28px;
                         margin-left: 20px;
@@ -90,7 +90,6 @@ body {
                 flex-direction: column;
                 position: absolute;
                 top: 60px;
-                z-index: 1;
                 .menulist {
                     display: flex;
                     flex-direction: column;
@@ -155,17 +154,13 @@ body {
             width: 47%;            
         }
         .previewtext {
-
             padding: 29% 0;
-
             width: 48%;
             display: flex;
             align-items: center;
             .brand {
                 width: 12px;
-
                 height: 10vh;
-
                 background: #F16D7F;
             }
             .textpreview {
@@ -354,13 +349,11 @@ body {
         .product {
             display: flex;
             position: absolute;
-            left: 0;             
-            background-color: #fff;
+            left: 0; 
             z-index: 1;
-            
             .filterrel {
+                position: relative;
                 display: flex;
-
                 padding: 20px;
                 &:hover {
                     width: 360px;
@@ -377,14 +370,12 @@ body {
                 }
                 .filtericon {
                     display: flex;
-
                     .filtertext {
                         margin-right: 11px;
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 17px;
                         color: #000000;
-
                         margin-bottom: 0;
                     }
                 }
@@ -418,20 +409,22 @@ body {
                         }
                           
                     }                      
-
                 }
             }
             
         }
         .filter {
             display: flex;
-
             padding-top: 20px;            
             .trend {
+                position: relative;
                 display: flex;
                 align-items: center;
-                margin: 0 15px;
-
+                margin: 0 10px;
+                padding: 0 20px 10px 0;
+                &:hover fieldset{
+                    display: flex;                    
+                }
                 .catalogtext {
                     font-size: 14px;
                     line-height: 17px;
@@ -439,6 +432,17 @@ body {
                     width: 100%;
                     margin-right: 10px;
                     margin-bottom: 0;
+                }
+                fieldset {
+                    background: #FFFFFF;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                    z-index: 1;
+                    position: absolute;
+                    display: none;
+                    flex-direction: column;
+                    left: 0;
+                    top: 20px;
+                    padding: 9px;
                 }
             }
         }
@@ -535,18 +539,16 @@ body {
     }
     .page {
         margin-top: 48px;
-        display: flex;
-        align-self: center;
         padding: 15px;
-        width: 283px;
-        border: 1px solid #EBEBEB;
-        justify-content: space-between;
-        .numpage {
+        border: 1px solid #EBEBEB; 
+        justify-content: center;     
+        .page-link {
             font-weight: 300;
-            font-size: 25px;
+            font-size: 16px;
             line-height: 19px;
             opacity: 0.3;
-            
+            border: none;
+            color: black;
         }
     }
 }
@@ -874,7 +876,6 @@ body {
         }
     }
 }
-
 
 .registration {
     .userloyaliti {
@@ -1214,39 +1215,6 @@ input {
     }
 }
 
-
-@media screen and (max-width: 1024px) {
-    .previewcolor .preview .previewtext .textpreview {
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .content .list .item {
-        width: 48%;
-    }
-    .footer .delicolor .delivery {
-        flex-direction: column;
-        .delilist {
-            padding: 48px 0 0;
-        }
-        .last {
-            padding-bottom: 64px;
-        }        
-    }
-    .footer .questionimage .question {
-        flex-direction: column;
-    }
-    .footer .questionimage .question .help {
-        padding-bottom: 0;
-    }
-    .footer .questionimage .question .email {
-        padding-bottom: 21%;
-    }
-    .footer .copyritecolor .copyrite {
-        padding: 3% 3%;
-    }
-}
-
-
 @media screen and (max-width: 667px) {
     .logomenucolor .logomenu .menubak .account {
         display: none;
@@ -1269,14 +1237,12 @@ input {
             }
         }    
     }
-
     .previewcolor .catalogmenu {
         flex-direction: column;
         .previewcatalog {
             margin-bottom: 32px;
         }
     }
-
     .bestlist {
         justify-content: center;
         .font {
@@ -1289,7 +1255,6 @@ input {
             width: 97%;
         }    
     }
-
     .catalog .list {
         justify-content: center;
         .item {
@@ -1377,7 +1342,6 @@ input {
             }
         }
     }
-
     .footer .questionimage .question {
         .help {
             width: 85%;
