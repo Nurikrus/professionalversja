@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title
+    <title>Каталог</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -64,6 +63,31 @@
                     </a>
                     <a class="bak margleft" href="card.html">
                         <img src="pic/bak.svg" alt="pic">
+                        <div class="buyProd">
+                            <div class="inlineSet">
+                                <div class="name Prod margright">
+                                    <h6>Имя продукта</h6>
+                                    <div></div>
+                                </div>
+                                <div class="quality Prod margright">
+                                    <h6>Кол-во продукта</h6>
+                                    <div></div>
+                                </div>
+                                <div class="price Prod margright">
+                                    <h6>Цена продукта</h6>
+                                    <div></div>
+                                </div>
+                                <div class="priceSum">
+                                    <h6>Стоимость прод-в</h6>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="totalSum inlineSet">
+                                <h6>Общая стоимость покупки:</h6>
+                                <div></div>
+                            </div>
+                        </div>
+                        <span></span>
                     </a>
                 </div>
             </div>
@@ -148,14 +172,45 @@
                 <div class="trend">
                     <p class="catalogtext">TRENDING NOW</p>
                     <img src="pic/details.svg" alt="pic" width="10" height="5">
+                    <fieldset>
+                        <label for="Bohemian">
+                            <input id="Bohemian" type="checkbox"> Bohemian</label>
+                        <label for="Floral">
+                            <input id="Floral" type="checkbox"> Floral</label>
+                        <label for="Lace  Floral">
+                            <input id="Lace  Floral" type="checkbox"> Lace Floral</label>
+                        <label for="Lace">
+                            <input id="Lace" type="checkbox"> Lace</label>
+                    </fieldset>
                 </div>
                 <div class="trend">
                     <p class="catalogtext">SIZE</p>
                     <img src="pic/details.svg" alt="pic" width="10" height="5">
+                    <fieldset>
+                        <label for="XS">
+                            <input id="XS" type="checkbox"> XS</label>
+                        <label for="S">
+                            <input id="S" type="checkbox"> S</label>
+                        <label for="M">
+                            <input id="M" type="checkbox"> M</label>
+                        <label for="L">
+                            <input id="L" type="checkbox"> L</label>
+                        <label for="XL">
+                            <input id="XL" type="checkbox"> XL</label>
+                        <label for="XXL">
+                            <input id="XXL" type="checkbox"> XXL</label>
+                    </fieldset>
                 </div>
                 <div class="trend">
                     <p class="catalogtext">PRICE</p>
                     <img src="pic/details.svg" alt="pic" width="10" height="5">
+                    <form oninput="result.value=(range.value)" action="#">
+                        <fieldset>
+                            <input id="range" type="range" value="10" step="1" min="0" max="2000">
+                            <br>
+                            <p><output name="result" for="range">0</output>$</p>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -166,13 +221,13 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item1.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product0</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
@@ -188,17 +243,17 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item2.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product1</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
-                        <a href="" class="add">
+                        <a href="#" class="add">
                             <img src="pic/bak.svg" alt="pic">
                             <p class="addtext">Add to Cart</p>
                         </a>
@@ -212,17 +267,17 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item3.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product2</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
-                        <a href="" class="add">
+                        <a href="#" class="add">
                             <img src="pic/bak.svg" alt="pic">
                             <p class="addtext">Add to Cart</p>
                         </a>
@@ -236,17 +291,17 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item4.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product3</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
-                        <a href="" class="add">
+                        <a href="#" class="add">
                             <img src="pic/bak.svg" alt="pic">
                             <p class="addtext">Add to Cart</p>
                         </a>
@@ -260,17 +315,17 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item5.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product4</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
-                        <a href="" class="add">
+                        <a href="#" class="add">
                             <img src="pic/bak.svg" alt="pic">
                             <p class="addtext">Add to Cart</p>
                         </a>
@@ -284,17 +339,17 @@
                     <a href="product.html" class="card-link">
                         <img class="item-img" src="pic/item6.jpg" alt="pic">
                         <div class="cardtext">
-                            <h4 class="cardname">ELLERY X M'O CAPSULE</h4>
+                            <h4 class="cardname">Product5</h4>
                             <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                                 of
                                 cool
                                 Kym
                                 Ellery teams up with Moda Operandi.</p>
-                            <p class="buy">$52.00</p>
+                            <p class="buy">$<span>52.00</span></p>
                         </div>
                     </a>
                     <div class="addbak">
-                        <a href="" class="add">
+                        <a href="#" class="add">
                             <img src="pic/bak.svg" alt="pic">
                             <p class="addtext">Add to Cart</p>
                         </a>
@@ -303,11 +358,30 @@
             </li>
         </ul>
 
-        <div class="page">
-            <img src="pic/left.svg" alt="pic">
-            <p class="numpage">1 2 3 4 5 6.....20</p>
-            <img src="pic/right.svg" alt="pic">
-        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination page">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     </div>
 
@@ -374,6 +448,7 @@
             </div>
         </div>
     </div>
+    <script src="bak.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
