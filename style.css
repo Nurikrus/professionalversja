@@ -204,8 +204,52 @@ body {
   z-index: 1;
 }
 
+.logomenucolor .menubak .bak {
+  position: relative;
+}
+
+.logomenucolor .menubak .bak span {
+  display: none;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background-color: #EF5B70;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4D4D4D;
+  border-radius: 10px;
+  padding: 1px 5px;
+}
+
+.logomenucolor .menubak .bak:hover .buyProd {
+  display: block;
+}
+
+.logomenucolor .menubak .bak .buyProd {
+  display: none;
+  position: absolute;
+  background-color: blanchedalmond;
+  right: 0;
+}
+
+.logomenucolor .menubak .bak .buyProd .inlineSet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logomenucolor .menubak .bak .buyProd .totalSum {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
 .margleft {
   margin-left: 33px;
+}
+
+.margright {
+  margin-right: 33px;
 }
 
 .previewcolor {

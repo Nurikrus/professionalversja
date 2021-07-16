@@ -137,11 +137,47 @@ body {
                 z-index: 1;
             }
         }
+        .bak {
+            position: relative;
+            span {
+                display: none;
+                position: absolute;
+                top: -8px;
+                right: -5px;
+                background-color: #EF5B70;
+                font-size: 14px;
+                line-height: 17px;
+                color:#4D4D4D ;
+                border-radius: 10px;
+                padding: 1px 5px;
+            }
+            &:hover {
+                .buyProd{
+                    display: block;
+                }
+            }
+            .buyProd {
+                display: none;
+                position: absolute;
+                background-color: blanchedalmond;
+                right: 0;
+                .inlineSet {
+                    display: flex;                    
+                }
+                .totalSum {
+                    justify-content: right;
+                }
+            }
+        }
     }
 }
 
 .margleft {
     margin-left: 33px;
+}
+
+.margright {
+    margin-right: 33px;
 }
 
 .previewcolor {
